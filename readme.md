@@ -28,7 +28,7 @@ No ano de 1997 a Netscape conseguiu padronizar a linguagem junto a ECMA Internac
 
 ## Variáveis
 * As variáveis possuem tipagem fraca, devem começar por uma letra, cifrão($) ou *underline*(_). Após a primeira letra podemos conter números.
-* Por conversão, devemos seguir o padrão camelCase.
+* Por convensão, devemos seguir o padrão camelCase.
 * São case-sensitive.
 * Tipagem dinâmica.
 
