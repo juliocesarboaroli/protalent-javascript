@@ -365,6 +365,9 @@ for (var prop in pessoa) {
 **while**<br>
 **for each ... in**
 
+## Manipulção da DOM
+Conforme mencionado anteriormente, o intuito inicial do Javascript era adicionar vida e comportamentos a páginas web, que até então eram todas estáticas. Com o Javascript, conseguimos adicionar elementos, tratar eventos de clique em elementos, adicionar estilose e mais um infinidade de coisas. Segue exemplo no [link](https://jsfiddle.net/yt8c63wx/23/).
+
 ## Materiais de apoio
 
 * Referência: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
