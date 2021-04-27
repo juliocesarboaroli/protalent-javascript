@@ -233,7 +233,137 @@ getScore(); // Retorna "Messi scored 5"
 
 ## Estruturas
 
+### if ... else
+Estrutura base: ```if (condicao) afirmacaoParaTrue else afirmacaoParaFalse```.
+Caso as afirmações tenham mais de uma linha, faz-se necessário utilizar chaves({}) para demarcar o bloco. Por exemplo:
+```javascript
+var idade = 18;
 
+if (idade >= 18) console.log("Adulto"); else console.log("Menor de idade");
+
+if (idade >= 18) {
+    console.log("Adulto");
+    console.log("Pode dirigir");
+} else {
+    console.log("Menor de idade");
+    console.log("Não pode dirigir");
+}
+```
+
+### switch
+Avalia uma expressão, combinando o valor com a cláusula case e executa as instruções
+```javascript
+var carro = "Jetta";
+
+switch(carro) {
+    case "Jetta": 
+        console.log("Sedan");
+        break;
+    case "Gol":
+    case "Golf":
+        console.log("Hatch");
+        break;
+    default:
+        console.log("Outro tipo de carroceria");
+}
+```
+
+### throw
+Usado para lançar uma exceção.
+```javascript
+throw new Error("Erro que quisermos");
+```
+
+Podemos também criar nossas exceções por meio de funções.
+
+```javascript
+function MinhaException(message) {
+   this.message = message;
+   this.name = "MinhaException";
+}
+
+throw new MinhaException("Mensagem da minha exceção");
+```
+
+### try ... catch
+Usado para capturar as exceções lançadas. **try** faz o teste de um bloco e o **catch** configura o bloco de tratativa da exceção, caso alguma seja lançada.
+
+Podemos definir em três formatos: <br>
+**try ... catch**<br>
+**try ... finally**<br>
+**try ... catch ... finally**<br>
+
+```javascript
+try {
+   throw "minhaException"; // gera uma exceção
+} catch (e) {
+   // declarações para manipular quaisquer exceções
+   console.log(e); // printa a exceção no console
+}
+
+try {
+   throw "minhaException"; // gera uma exceção
+} catch (e) {
+   // declarações para manipular quaisquer exceções
+   console.log(e); // printa a exceção no console
+} finally {
+    console.log("finally");
+}
+```
+
+A cláusula finally é executada após a excecução do bloco try e da(s) cláusula(s) catch porém antes das declarações seguintes a declaração try. Ela sempre é executada, independente se uma exceção for lançada ou capturada.
+
+### for
+Instrução que cria um loop baseado em três expressões.
+
+```javascript
+for (var i = 0; i < 9; i++) {
+   console.log(i); // vai printar o valor de i enquanto ele for menor que 9
+}
+```
+
+### for .. of
+Itera sobre objetos iterativos (Array, Map, Set), chamando uma função personalizada com instruções a serem executadas para o valor de cada objeto distinto
+```javascript
+let numeros = [10, 20, 30];
+
+for (const numero of numeros) {
+  console.log(numero);
+  // 10
+  // 20
+  // 30
+}
+
+let palavra = "palavra";
+
+for (const letra of palavra) {
+  console.log(letra);
+  // p
+  // a
+  // l
+  // a
+  // v
+  // r
+  // a
+}
+```
+
+### for .. in
+Itera sobre propriedades enumeradas de um objeto, na ordem original de inserção. O laço pode ser executado para cada propriedade distinta do objeto.
+```javascript
+var pessoa = { nome: "André", idade: 20 };
+
+//Para prop (propriedade) in pessoa (objeto) faça
+for (var prop in pessoa) {
+  console.log("pessoa." + prop + " = " + pessoa[prop]);
+}
+```
+**OBS**: for ... in não deve ser usado para iteração em uma Array onde a ordem é importante, visto que ele iterage em uma ordem arbitrária.
+
+### Outras intruções de iteração
+**do ... while**<br>
+**while**<br>
+**for each ... in**
 
 ## Materiais de apoio
 
