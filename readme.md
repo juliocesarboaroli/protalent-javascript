@@ -112,11 +112,13 @@ pessoas[1].nome; // Maria
 Atribui um valor ao operando à esquerda.
 
 ```javascript
-var x = y;
-var x += y; // x = x + y - atribuição de adição
-var x -= y; // x = x - y - atribuição de subtração
-var x *= y; // x = x * y - atribuição de multiplicação
-var x /= y; // x = x / y - atribuição de divisão
+var x = 0;
+var y = 1;
+x = y;
+x += y; // x = x + y - atribuição de adição
+x -= y; // x = x - y - atribuição de subtração
+x *= y; // x = x * y - atribuição de multiplicação
+x /= y; // x = x / y - atribuição de divisão
 ```
 
 ### Comparação
@@ -366,7 +368,7 @@ for (var prop in pessoa) {
 **for each ... in**
 
 ## Manipulção da DOM
-Conforme mencionado anteriormente, o intuito inicial do Javascript era adicionar vida e comportamentos a páginas web, que até então eram todas estáticas. Com o Javascript, conseguimos adicionar elementos, tratar eventos de clique em elementos, adicionar estilose e mais um infinidade de coisas. Segue exemplo no [link](https://jsfiddle.net/ybsf4p9e/6/).
+Conforme mencionado anteriormente, o intuito inicial do Javascript era adicionar vida e comportamentos a páginas web, que até então eram todas estáticas. Com o Javascript, conseguimos adicionar elementos, tratar eventos de clique em elementos, adicionar estilos e mais um infinidade de coisas. Segue exemplo no [link](https://jsfiddle.net/ybsf4p9e/6/).
 
 ## Materiais de apoio
 
