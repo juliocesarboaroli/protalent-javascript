@@ -179,7 +179,7 @@ multiplicar(7, 5); // 35
 multiplicar(4, 8); // 32
 ```
 
-Funções devem estar no escopo quando são chamadas, mas a declaração de uma função pode ser puxada para o topo (aparecem abaixo da chamada no código), como neste exemplo:
+Funções devem estar no escopo quando são chamadas, mas a declaração de uma função pode ser puxada para o topo durante a interpretação (hoisting), como neste exemplo:
 
 ```javascript
 multiplicar(10, 2);
